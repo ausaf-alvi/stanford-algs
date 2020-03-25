@@ -24,6 +24,9 @@ java -cp path/to/your/classes MySolutionClass path/to/input/file.txt
 21
 5
 ```
+Note: Use CR LF for new line and not just LF.
+      That is, use System.out.print("43\r\n21\r\n5"); instead of System.out.print("43\n21\n5");
+      In linux, the generated output might not match the expected output if you use only line feed (i.e. \n) for new line.
 
 This being said, you *may* output additional text through **_System.err_** if
 you wish.  For many assignments, it's useful to use **_System.err_** for
